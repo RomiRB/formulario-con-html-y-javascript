@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>formulario</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link  rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!--linkea el css con bootstrap-->
+	<script src="js/validarfunciona.js"></script><!--recordar que antes usaba valida.js-->
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="contenedor-formulario">
+			<div class="col-md-12 col-xs-12 formulario1" >
+			<form class="form-horizontal" action="#" method="post" onsubmit="return validar();">
+
+				<div class="form-group">
+			    	<label for="forNombre">Nombre</label>
+			    	<input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" ><!--required pattern=[...] es para que solo se acepten letras, min length meno de letras aceptadas y maxlength máximo de letras a ingresar--> 
+			  	</div>
+			</br>
+				<div class="form-group">
+			    	<label for="forApellido">Apellido</label>
+			    	<input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" ><!--required pattern=[...] es para que solo se acepten letras, min length meno de letras aceptadas y maxlength máximo de letras a ingresar--> 
+			  	</div>
+			</br>	
+			  	<div class="form-group">
+			    	<label for="forTelefono">Teléfono</label>
+			    	<input type="text" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" > <!-- number acepta solo números, min length meno de letras aceptadas y maxlength máximo de letras a ingresar--> 
+			  	</div>
+			</br>
+			  	<div class="form-group">
+			    	<label for="forEmail">Email</label>
+			    	<input type="email" class="form-control" id="email" placeholder="Ingresa tu email email@ejemplo.com" ><!-- min length meno de letras aceptadas y maxlength máximo de letras a ingresar--> 
+			  	</div>
+			</br>
+			  	<div class="form-group">
+			    	<label for="forEdad">Edad</label>
+			    	<input type="text" class="form-control" id="edad" placeholder="Ingresa tu edad" ><!-- number acepta solo números, min length meno de letras aceptadas y maxlength máximo de letras a ingresar--> 
+			  	</div>
+			</br>
+			  	<div class="boton">
+			  		<button type="submit" class="btn btn-default">Aceptar</button>
+			  	</div>
+			</form>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap2.min.js"></script>
+<!--linkea el js con bootstrap-->
+</body>
+</html>
